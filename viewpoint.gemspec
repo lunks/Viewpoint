@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.files = Dir['Changelog.txt', 'README', 'TODO', 'lib/**/*']
   s.require_path = 'lib'
   s.rdoc_options = %w(-x test/ -x examples/)
-  s.extra_rdoc_files = %w(README)
+  s.extra_rdoc_files = %w(README.md)
 
   s.add_runtime_dependency  'nokogiri'
   s.add_runtime_dependency  'httpclient'
