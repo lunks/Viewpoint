@@ -28,6 +28,7 @@ class Viewpoint::EWS::Connection
     @httpcli = HTTPClient.new
     # Up the keep-alive so we don't have to do the NTLM dance as often.
     @httpcli.keep_alive_timeout = 60
+    @httpcli.ssl_config.verify_mode = OpenSSL::SSL::VERIFY_NONE
     @endpoint = endpoint
   end
 
